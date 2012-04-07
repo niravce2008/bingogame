@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bingo</title>
+
+<link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/fancybox.css" rel="stylesheet" type="text/css" />
+<script src="/javascripts/jquery.js"></script>
+<script src="/javascripts/fancybox.js"></script>
+<script src="/javascripts/siteFunction.js"></script>
+<script src="/javascripts/socket.io.js"></script>
+<script type="text/javascript" src="/javascripts/now.js"></script>
+
+<script>
+$(document).ready(function(){
+	$('#signInBtn,#registrationBtn').fancybox();
+});
+</script>
+
+	<script>
+	 $(document).ready(function(){
+	 
+		var game = io.connect('http://127.0.0.1:3000/game');
+		game.on('BINGO number',function (data){
+			var newNo = $(".round_number:first").clone();
+			$(newNo).children('a').html($('.round_number:last>a').html());
+			$(newNo).css({"margin-left":"20px"});
+
+			$( "#box2" ).css({
+			  "-moz-transform": "rotate(360deg)",
+			  "-webkit-transform": "rotate(360deg)",
+			  "-o-transition": "rotate(360deg)",
+			  "-ms-transform": "rotate(360deg)",
+			   left: 638
+			});
+			
+			$( ".round_number:first" ).animate({
+			  width: 0,
+			  opacity: 0
+			}, "slow" ,function() {
+			$( "#box2" ).css({
+				  "-moz-transform": "rotate(0deg)",
+				  "-webkit-transform": "rotate(0deg)",
+				  "-o-transform": "rotate(0deg)",
+				  "-ms-transform": "rotate(0deg)",
+				   left: 35
+			});
+				$('.round_number:first').remove(); 
+				$('.round_number:first').css({"margin-left":"133px"});
+				$('.center_part').append(newNo);
+				$('.round_number:not(:first,:last)').css({"margin-left":"2px"});
+				$('.round_number:last>a').html(data.data);
+				
+			});
+	
+		});
+	 });
+
+</script>
+
+<style>
+#box1
+{
+	height:100px;
+	width:100px;
+	position:absolute;
+	left: 35px;
+	top: 7px;
+	z-index:99;
+}
+#box2{
+	position:absolute;
+	left: 35px;
+	top: 7px;
+	-webkit-transition:1s all ease-in-out;
+	-moz-transition:1s all ease-in-out;
+	-o-transition:1s all ease-in-out;
+	-ms-transition:1s all ease-in-out;
+}
+	
+#box1:hover + #box2{
+	-webkit-transform:rotate(360deg);
+	-moz-transform:rotate(360deg);
+	-o-transform:rotate(360deg);
+	-ms-transform:rotate(360deg);
+	left:438px;
+}
+</style>
+</head>
+<body>
+<!--	<div ><a id='signInBtn' href='/signin'>Sign in</a><a href='/registration' id='registrationBtn'>New User?</a></div> -->
+    <%-partial('header.ejs')%>    
+        <%-body %>
+</body>
+</html>

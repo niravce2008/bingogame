@@ -1,0 +1,358 @@
+body{ margin:0px; padding:0px; background:url(../images/body_bg.png) no-repeat left top #000000;}
+
+
+@font-face {
+    font-family: 'OrbitronLight';
+    src: url('../font/orbitron-light-webfont.eot');
+    src: url('../font/orbitron-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/orbitron-light-webfont.woff') format('woff'),
+         url('../font/orbitron-light-webfont.ttf') format('truetype'),
+         url('../font/orbitron-light-webfont.svg#OrbitronLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OrbitronBold';
+    src: url('../font/orbitron-bold-webfont.eot');
+    src: url('../font/orbitron-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/orbitron-bold-webfont.woff') format('woff'),
+         url('../font/orbitron-bold-webfont.ttf') format('truetype'),
+         url('../font/orbitron-bold-webfont.svg#OrbitronBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'DiavloLight';
+    src: url('../font/diavlo_light_ii-webfont.eot');
+    src: url('../font/diavlo_light_ii-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/diavlo_light_ii-webfont.woff') format('woff'),
+         url('../font/diavlo_light_ii-webfont.ttf') format('truetype'),
+         url('../font/diavlo_light_ii-webfont.svg#DiavloLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'BellMTRegular';
+    src: url('../font/bell_0-webfont.eot');
+    src: url('../font/bell_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/bell_0-webfont.woff') format('woff'),
+         url('../font/bell_0-webfont.ttf') format('truetype'),
+         url('../font/bell_0-webfont.svg#BellMTRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('../font/myriadpro-bold_0-webfont.eot');
+    src: url('../font/myriadpro-bold_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/myriadpro-bold_0-webfont.woff') format('woff'),
+         url('../font/myriadpro-bold_0-webfont.ttf') format('truetype'),
+         url('../font/myriadpro-bold_0-webfont.svg#MyriadProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ImpactRegular';
+    src: url('../font/impact_0-webfont.eot');
+    src: url('../font/impact_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/impact_0-webfont.woff') format('woff'),
+         url('../font/impact_0-webfont.ttf') format('truetype'),
+         url('../font/impact_0-webfont.svg#ImpactRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ft2Regular';
+    src: url('../font/ft2-webfont.eot');
+    src: url('../font/ft2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/ft2-webfont.woff') format('woff'),
+         url('../font/ft2-webfont.ttf') format('truetype'),
+         url('../font/ft2-webfont.svg#ft2Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'DigitalSerialBold';
+    src: url('../font/digital-serial-bold-webfont.eot');
+    src: url('../font/digital-serial-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/digital-serial-bold-webfont.woff') format('woff'),
+         url('../font/digital-serial-bold-webfont.ttf') format('truetype'),
+         url('../font/digital-serial-bold-webfont.svg#DigitalSerialBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+#wraper{ width:1000px; margin:auto;  border:#979797 solid 2px;
+background: rgb(73,73,73); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(73,73,73,1) 1%, rgba(0,0,0,1) 50%, rgba(59,59,59,1) 100%, rgba(59,59,59,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,rgba(73,73,73,1)), color-stop(50%,rgba(0,0,0,1)), color-stop(100%,rgba(59,59,59,1)), color-stop(100%,rgba(59,59,59,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(73,73,73,1) 1%,rgba(0,0,0,1) 50%,rgba(59,59,59,1) 100%,rgba(59,59,59,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(73,73,73,1) 1%,rgba(0,0,0,1) 50%,rgba(59,59,59,1) 100%,rgba(59,59,59,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(73,73,73,1) 1%,rgba(0,0,0,1) 50%,rgba(59,59,59,1) 100%,rgba(59,59,59,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(73,73,73,1) 1%,rgba(0,0,0,1) 50%,rgba(59,59,59,1) 100%,rgba(59,59,59,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#3b3b3b',GradientType=0 ); /* IE6-9 */}
+.cl{ clear:both;}
+.fl{ float:left;}
+
+img{ border:none;}
+#top_part{ width:1004px; background:url(../images/top_bg.png) repeat-x left top; margin:63px auto auto auto;}
+.top_left_img{ width:40px; height:28px; padding:4px 0 3px 17px; float:left;}
+.price_bg{ background:url(../images/price_bg.png) no-repeat; width:82px; line-height:27px; float:left; margin-left:15px;  font-family: 'DigitalSerialBold'; padding-left:78px; font-size:20px; color:#ff99ff; margin-top:4px;}
+
+.price_bg span{ font-family: 'BellMTRegular'; font-size:27px; color:#ff99ff;}
+.img_1{ width:396px; float:left; background:url(../images/img.png) no-repeat right; font-family: 'ft2Regular'; font-size:25px; color:#FFFFFF; text-align:center; padding-left:51px;}
+.img_1 span{ font-family: 'ft2Regular'; font-size:12px; color:#FFFFFF;}
+
+.top_right_part{ width:150px; float:right;}
+.top_right_img{ width:25px; height:28px; padding:4px 0 3px 5px; float:left;}
+.volume_img{ width:15px; float:left; padding:9px 0px 3px 0px;}
+
+#contant{  background:url(../images/contant_bg.png) no-repeat left; height:auto;}
+.contant{ width:958px; margin:auto;}
+
+.contant_top{ width:958px; float:left;}
+.show_history_part{ width:197px; padding-top:20px; float:left;}
+.timeing_img{ width:124px; background:url(../images/img_3.png) no-repeat; line-height:72px; font-family:Orbitron; color:#ff0000; padding-left:25px; margin-top:18px; font-size:21px;}
+.center_part{ width:568px; float:left; background:url(../images/number_bg.png) no-repeat; height:102px; margin-top:20px; padding-top:24px; position:relative;}
+
+.round_number{ width:59px; line-height:59px; background:url(../images/round_img.png) no-repeat; float:left;  font-family: 'ImpactRegular'; text-align:center; font-size:26px; color:#0061a5; margin-left:2px;}
+.round_number a{ line-height:59px;  font-family: 'ImpactRegular'; text-align:center; font-size:26px; color:#0061a5; text-decoration:none;}
+.round_number a:hover{ color:#000000;}
+
+.becool_part{ width:176px; background:url(../images/becool_img.png) no-repeat; height:106px; margin-top:16px; float:right;}
+.yellow_bg{ width:150px; float:right; background:url(../images/yellow_bg.png) no-repeat; height:46px; padding:11px 11px 0 11px; text-align:right; margin-top:115px;}
+
+
+/*********middle Part Start Here************/
+
+
+/*********middle Left Part Start Here************/
+.middle_left_part{ width:553px; float:left; }
+.middle_right_part{ width:403px; float:right; }
+.patroon_img{ width:103px; float:left; text-align:center; font-family:"Myriad Pro"; color:#FFFFFF; padding-top:10px;}
+.patroon_bg{ width:118px; float:left; line-height:38px; text-align:right; font-size:19px; color:#ffff00; font-family: 'OrbitronLight'; border-radius:5px; text-shadow: 0px 0px 5px #fff; border:#656565 solid 1px; margin-top:5px;
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #434343 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#434343)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #000000 0%,#434343 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #000000 0%,#434343 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #000000 0%,#434343 100%); /* IE10+ */
+background: linear-gradient(top,  #000000 0%,#434343 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#434343',GradientType=0 ); /* IE6-9 */
+}
+
+.patroon_bg span{ font-family:Diavlo; font-size:23px; color:#FFFFFF; padding-right:8px;  font-family: 'OrbitronBold';}
+.patroon_box{ width:122px; float:left; font-family:"Myriad Pro"; color:#FFFFFF; font-size:16px; margin-right:3px;}
+.pink_bg{ width:118px; float:left; line-height:38px; text-align:right; font-size:19px; color:#ff99ff; font-family: 'OrbitronLight'; border-radius:5px; text-shadow: 0px 0px 5px #fff; border:#656565 solid 1px; margin-top:-9px;
+background: #d461ea; /* Old browsers */
+background: -moz-linear-gradient(top,  #d461ea 0%, #b15aaf 50%, #d461ea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d461ea), color-stop(50%,#b15aaf), color-stop(100%,#d461ea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #d461ea 0%,#b15aaf 50%,#d461ea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #d461ea 0%,#b15aaf 50%,#d461ea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #d461ea 0%,#b15aaf 50%,#d461ea 100%); /* IE10+ */
+background: linear-gradient(top,  #d461ea 0%,#b15aaf 50%,#d461ea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d461ea', endColorstr='#d461ea',GradientType=0 ); /* IE6-9 */
+
+}
+
+.pink_bg span{ font-family:Diavlo; font-size:23px; color:#FFFFFF; padding-right:8px; font-family: 'DiavloLight'; }
+.kaart_bg{ width:436px; background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #434343 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#434343)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #000000 0%,#434343 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #000000 0%,#434343 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #000000 0%,#434343 100%); /* IE10+ */
+background: linear-gradient(top,  #000000 0%,#434343 100%); /* W3C */
+margin-top:15px; line-height:48px; text-align:center; color:#99ffff; font-size:19px; font-family: 'OrbitronLight'; text-shadow: 0px 0px 5px #fff; box-shadow: 0px 0px 10px #666666; border:#656565 solid 1px; border-radius:5px;
+}
+/*********middle Left Part End Here************/
+
+
+/*********middle Right Part Start Here************/
+.bingo_img{ width:369px; float:right; padding-top:15px;}
+.right_menu{ width:408px; float:left; padding-top:5px;}
+.right_menu ul{ margin:0px; padding:0px;}
+.right_menu li{ text-decoration:none; list-style:none; color:#FFFFFF; display:inline; padding:0 2px 0 2px;}
+.right_menu li a{ text-decoration:none; color:#FFFFFF; display:inline; padding:0 2px 0 2px; font-family: 'BellMTRegular'; font-size:18px;}
+.right_menu li a:hover{ color:#FFFF00;}
+/*********middle Right Part Start Here************/
+
+/*********middle Part End Here************/
+
+
+/*********left Part Start Here************/
+#left_part{ width:371px; float:left; background:#e3e4da; margin-right:11px;}
+#right_part{ width:575px; float:left; margin-top:19px;}
+
+.calender_left_part{ width:41px; float:left; background:url(../images/line.png) no-repeat 0 149px; }
+.calender_right_part{ width:319px; float:left; }
+.zoom{ width:41px; padding-top:15px; }
+.zoom_img{ width:15px; padding-left:10px; padding-bottom:4px;}
+
+.zoom_text{ width:41px; padding-top:10px; line-height:37px; font-family:"Myriad Pro"; font-size:16px; color:#000000; margin-left:-8px;
+ -webkit-transform: rotate(269deg);
+    -moz-transform: rotate(269deg);
+    -o-transform: rotate(269deg);
+    writing-mode: lr-tb; 
+ }
+.kaarten_text{ width:11px; padding-left:10px; padding-bottom:5px;   padding-top:60px; line-height:37px; font-family: 'MyriadProBold'; font-size:16px; color:#000000;}
+.calender_top_part{ width:312px; float:left; margin-bottom:6px;}
+.spel_bg{  float:left; font-size:16px; border-radius:10px; background:#FF0000; color:#FFFFFF; text-align:left; line-height:26px; font-family: 'MyriadProBold'; text-transform:uppercase; padding-left:5px; margin-top:5px; letter-spacing:-1px;}
+.spel_bg span{ font-size:16px; padding-left:8px; padding-right:10px;}
+
+.white_bg{  float:right; font-size:16px; border-radius:10px; background:#FFFFFF; color:#000000; text-align:left; line-height:26px; font-family: 'MyriadProBold'; text-transform:uppercase; padding-left:9px; margin-top:5px; letter-spacing:-1px;}
+.white_bg span{ font-size:16px; padding-left:10px; padding-right:10px;}
+.calender_bg{ width:320px; background:#d2e2fb; height:auto; float:left;}
+.bingo_box1{ width:94px; float:left; padding:1px 4px 0 7px;}
+.bingo_text{ font-family: 'MyriadProBold'; text-transform:uppercase; font-size:16px; letter-spacing:7px;  color:#69717e; text-align:center;}
+.outsite_border{ border:#69717e solid 2px;}
+.inside_border{ border:#69717e solid 1px; color:#69717e; text-align:center; font-size:14px; }
+.bottom_text{ color:#69717e; font-size:12px; text-align:center; font-family:Arial, Helvetica, sans-serif;}
+
+.bottom_aero{ width:313px; float:left; padding-top:5px;}
+.left_aero{ width:15px; float:left; padding-bottom:3px;}
+.center_img{ width:274px; float:left; padding:4px 0 0 5px;}
+
+/*********left Part End Here************/
+
+
+/*********right Part Start Here************/
+.right_btn{ width:297px; float:left; padding-left:30px;}
+.chat_btn{ float:left; background:url(../images/chat_btn.png) no-repeat; width:62px; line-height:30px; font-family:"Myriad Pro"; color:#333333; font-size:14px; text-align:center; font-weight:bold; margin-right:2px;}
+.chat_btn a{ line-height:30px; font-family:"Myriad Pro"; color:#333333; font-size:14px; text-align:center; font-weight:bold; text-decoration:none; display:block;}
+.chat_btn a:hover{ background:url(../images/chat_btn_hover.png) no-repeat;}
+.chat_btn a.current{ background:url(../images/chat_btn_hover.png) no-repeat;}
+
+.private_btn{ float:left; background:url(../images/private_btn.png); width:79px; line-height:30px; font-family:"Myriad Pro"; color:#333333; font-size:14px; text-align:center; font-weight:bold; margin-right:2px;}
+.private_btn a{ display:block; line-height:30px; font-family:"Myriad Pro"; text-decoration:none; color:#333333; font-size:14px; text-align:center; font-weight:bold;}
+.private_btn a:hover{ background:url(../images/private_btn_hover.png);}
+.private_btn a.current{ background:url(../images/private_btn_hover.png);}
+
+.room_selection_btn{ float:left; background:url(../images/room_selection_btn.png) no-repeat; width:136px; line-height:30px;  font-family:"Myriad Pro"; color:#333333; font-size:14px; text-align:center; font-weight:bold;}
+.room_selection_btn a{ text-decoration:none; line-height:30px;  font-family:"Myriad Pro"; color:#333333; font-size:14px; text-align:center; display:block; font-weight:bold;}
+.room_selection_btn a:hover{background:url(../images/room_selection_btn_hover.png) no-repeat; }
+.room_selection_btn a.current{background:url(../images/room_selection_btn_hover.png) no-repeat; }
+
+
+.white_box{ width:575px; float:left;}
+.white_top_part{ width:546px; float:left; height:25px;}
+.white_middle_part{ width:561px; float:left; background:url(../images/white_middle_img.png) repeat-y; height:auto; padding-left:16px;}
+
+.rijhr_box{ width:336px; float:left; padding-left:9px;}
+.prijs_top_part{ width:337px; float:left; background:url(../images/border.png) repeat-x left bottom; line-height:34px;}
+
+.room_rijhr_text{ width:129px; float:left; color:#553f32; font-size:16px; font-family: 'BellMTRegular'; text-align:left; text-align:right;}
+.room_rijhr_text strong{ color:#0066cc; font-size:16px; font-family:Arial, Helvetica, sans-serif;  padding-left:5px;}
+.room_rijhr_text span{ color:#d37741; font-size:30px; font-family: 'BellMTRegular'; padding-left:5px;}
+
+.perpal_bg{ width:300px; background:url(../images/perpal_bg.png) no-repeat; margin-top:5px; height:33px; margin-bottom:11px;}
+.round_img{ width:150px; float:left; background:url(../images/white_bg.png) no-repeat; margin-top:4px; margin-left:3px; line-height:27px; color:#333333; text-align:center; font-family: 'BellMTRegular'; font-size:20px;}
+.bingo_90_text{ float:left; margin-top:4px; margin-left:3px; line-height:27px; color:#FFFFFF; padding-left:23px; text-align:center; font-family: 'BellMTRegular'; font-size:20px;}
+
+.list{ width:339px; background:url(../images/list_border.png) repeat-x left bottom; line-height:22px;}
+.aare_text{ font-family:Arial, Helvetica, sans-serif; color:#333333; font-size:12px; float:left;}
+.aare_text span{ color:#14ade0; font-weight:bold; padding-left:20px;}
+
+.timing{ font-family:Arial, Helvetica, sans-serif; color:#333333; font-size:12px; float:left; padding-left:10px; line-height:18px;}
+.timing span{ font-family: 'BellMTRegular'; color:#d37741; font-size:20px; padding-left:6px;}
+.timing strong{ font-weight:bold; color:#14ade0; font-size:12px;}
+
+.timing1{font-family:Arial, Helvetica, sans-serif; color:#e85e5e; font-size:12px; float:left; padding-left:77px; font-weight:bold; }
+
+.center_line{ background:url(../images/img_4.png) no-repeat; width:35px; height:339px; float:left;}
+.filtters_box{ width:122px; float:left;}
+.filtters_text{ width:129px; float:left; color:#553f32; font-size:16px; font-family: 'BellMTRegular'; text-align:left; text-align:center; background:url(../images/border.png) repeat-x left bottom; line-height:38px; margin-bottom:14px;}
+
+.bottom_right_menu{ width:31px; float:left; padding-left:20px;}
+.plyers_btn{ background:url(../images/players_btn.png) no-repeat; width:30px; height:69px; float:left; text-align:center; padding-top:12px;}
+.friends_btn{ background:url(../images/friends_btn.png) no-repeat; width:30px; height:68px; float:left; text-align:center; padding-top:12px;}
+
+
+
+/*********right Part End Here************/
+
+
+
+
+/* becoolbingo page start here */
+.middle_right_part1{ width:400px; float:left; }
+
+.patroon_box1{ width:110px; float:left; font-family:"Myriad Pro"; color:#FFFFFF; font-size:16px; margin-right:6px;}
+
+.patroon_bg1{ width:110px; float:left; line-height:38px; text-align:right; font-size:19px; color:#ffff00; font-family:"Myriad Pro"; border-radius:5px; text-shadow: 0px 0px 5px #fff; border:#656565 solid 1px; margin-top:5px;
+background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #434343 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#434343)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #000000 0%,#434343 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #000000 0%,#434343 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #000000 0%,#434343 100%); /* IE10+ */
+background: linear-gradient(top,  #000000 0%,#434343 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#434343',GradientType=0 ); /* IE6-9 */ }
+
+
+.kaart_bg1{ width:520px; background: #000000; /* Old browsers */
+background: -moz-linear-gradient(top,  #000000 0%, #434343 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#434343)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #000000 0%,#434343 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #000000 0%,#434343 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #000000 0%,#434343 100%); /* IE10+ */
+background: linear-gradient(top,  #000000 0%,#434343 100%); /* W3C */
+margin-top:15px; line-height:48px; text-align:center; color:#99ffff; font-size:19px; font-family:Orbitron; text-shadow: 0px 0px 5px #fff; box-shadow: 0px 0px 10px #666666; 
+border:#656565 solid 1px; border-radius:5px; }
+
+.bingo_box2{ width:100px; float:left; padding:7px 4px 0 7px; margin-left:10px;}
+
+.spel_number_box{ width:320px; height:380px; }
+.spel_header_box{ background:url(../images/spel_head_bg.png) no-repeat; width:320px; height:11px;}
+.spel_middile_box{ background:url(../images/spel_middile_bg.png) repeat-y; width:320px; }
+.spel_bottom_box{ background:url(../images/spel_bottom_bg.png) no-repeat; width:320px; height:10px;}
+
+.spel_number_box1 { margin-left:6px; padding-top:5px;  width:300px; float:left;  background:url(../images/spel_bottom_border_line.png) repeat-x bottom; height:55px; }
+
+.ing_box{ float:left; width:150px;}
+
+.bottom_aero_new{ width:320px; float:left;}
+
+.bingo_count_new{ float:left; width:134px; height:43px; border:#bcb1c0 2px solid; }
+.bingo_count_new:hover{ float:left; width:134px; height:45px; border:#644f6a 2px solid; }
+
+.bingo_count_new_select{ float:left; width:134px; height:45px; border:#644f6a 2px solid; }
+
+.counting_box_new{ float:left;   }
+.counting_box_new ul { margin:0; padding:0;}
+.counting_box_new ul li{  float:left;  width:14px; height:14px; border-right:#bcb1c0 1px solid; text-align:center;
+ border-bottom:#bcb1c0 1px solid; font-size:8px; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; list-style:none;  color:#a09297; line-height:14px;}
+
+.counting_box_new ul li.count2{  float:left;  width:17.4px; height:15px; background:url(../images/count_bg2.png) no-repeat; border-right:#56574f 1px solid;
+ border-bottom:#56574f 1px solid; font-size:8px; font-family:Verdana, Arial, Helvetica, sans-serif; font-weight:bold; list-style:none;  color:#c81a01; line-height:14px;}
+/* becoolbingo page end here */
+
+
+ /* bingo_btn_box start here */
+ .bingo_btn_box{ margin:20px auto; width:320px; padding:12px 17px; height:96px; background:#95c7f9; border:#e3e4e5 3px solid;}
+ .elips_box{ float:left; margin:2px; width:16px; height:16px;}
+ 
+  /* bingo_btn_box end here */

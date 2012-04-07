@@ -1,0 +1,70 @@
+<div id="wraper"> 	
+	<div id="contant">
+    	<div class="contant">
+  			<div class="contant_top">
+            	<div class="show_history_part"><a href="#"><img src="images/show_history_btn.png" alt="" /></a>
+                <div class="timeing_img">06:35</div>
+                </div>
+                <%-partial('currentNubmerinfo')%>                        
+                <div class="becool_part">
+                	<div class="yellow_bg"><a href="#"><img src="images/fsalingen_btn.png" alt="" /></a></div>
+                </div>
+                
+            </div>  
+            
+            
+
+
+            <div class="contant_top">
+               <%
+                var i=1;
+                if (i==1){%>
+                   <%-partial('game25.ejs')%>
+                <%}
+                else{%>
+                   <%-partial('game75.ejs')%>
+                <%} %> 
+            </div>
+                
+    <!--left part start here-->
+    <div id="left_part">
+               <%
+                if (i==1){%>
+                    <%-partial('game25left.ejs')%>
+                <%}
+                else{%>
+                   <%-partial('game75left.ejs')%>
+                <%} %> 
+
+    </div>     
+                
+<!--left part End here-->
+
+<!--right part Start here-->
+<div id="right_part">
+	<div class="right_btn">
+    	<div class="chat_btn"><a href="#">CHAT</a></div>
+        <div class="private_btn"><a href="#" class="current">PRIVATE</a></div>
+        <div class="room_selection_btn"><a href="#">ROOM SELECTION</a></div>
+    </div>
+    
+    <div class="white_box">
+    	<div class="white_top_part"><img src="images/white_top_img.png" alt="" /></div>
+        <%- partial('leftmiddle.ejs') %>
+        <div class="white_top_part" style="height:22px;"><img src="images/white_bottom_img.png" alt="" width="546" height="22" /></div>
+    </div>
+    
+</div>
+<!--right part End here-->
+
+
+
+                
+                
+                
+                 
+                <div class="cl"></div>   	
+            </div>
+        </div>
+    </div>
+    <div class="cl"></div>
